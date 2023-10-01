@@ -13,7 +13,7 @@ import java.util.Arrays;
 @Component
 @RequiredArgsConstructor
 @Slf4j
-public class AggregateIdentityDetector implements AggregateFieldDetector {
+public class AggregateIdentityDetector implements AggregateElementDetector<Field> {
     private final HandlerFactory handlerFactory;
 
 

@@ -3,14 +3,14 @@ package ru.muravev.cqrs.eventsource;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import ru.muravev.cqrs.aggregate.AggregateDescription;
-import ru.muravev.cqrs.aggregate.AggregateMethodDetector;
+import ru.muravev.cqrs.aggregate.AggregateElementDetector;
 import ru.muravev.cqrs.util.MethodUtils;
 
 import java.lang.reflect.Method;
 
 @Component
 @RequiredArgsConstructor
-public class AggregateEventSourceDetector implements AggregateMethodDetector {
+public class AggregateEventSourceDetector implements AggregateElementDetector<Method> {
     private final HandlerFactory handlerFactory;
 
 

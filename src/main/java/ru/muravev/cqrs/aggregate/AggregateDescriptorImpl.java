@@ -13,8 +13,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @Slf4j
 public class AggregateDescriptorImpl implements AggregateDescriptor {
-    private final List<AggregateMethodDetector> methodDetectors;
-    private final List<AggregateFieldDetector> fieldDetectors;
+    private final List<AggregateElementDetector<Method>> methodDetectors;
+    private final List<AggregateElementDetector<Field>> fieldDetectors;
     private final AggregateNameResolver nameResolver;
 
 
